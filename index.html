@@ -1,0 +1,189 @@
+<!Doctype html>
+
+<html>
+    <head>
+
+
+        <title>Triva Game</title>
+
+        <script src = "assets/javascript/app.js"></script>
+
+        <link rel = "stylesheet" href = "./assets/css/style.css">
+        
+
+    </head>
+
+
+        <body>
+         <div>  
+            <h1 id = "gameTitle">Totally Trivial Trivia!</h1>
+        </div> 
+        <div>  
+            <h1 id = "starter">START!</h1>    
+        </div> 
+
+
+        <h3>
+           
+
+            <div class = "questions">
+                    
+                
+                    <div class = "timer">
+                            <p>Time Remaining:</p>
+                            <p id = "numberDown"></p>
+                            <p>Seconds</p>
+                    </div>
+
+
+                <p id = "question1">Who is the leader of the X-Men?</p>
+                    <p class = "answers1">
+                        <p>Charles Xavier</p>
+                        <p>Magneto</p>
+                        <p>Wolverine</p>
+                        <p>Cyclops</p>
+                    </p>
+
+                <p id ="question2">Which was a blockbuster movie in the year 1977?</p>
+                    <p class = "answers2">
+                        <p>Alien</p>
+                        <p>Baderunner</p>
+                        <p>Star Wars</p>
+                        <p>Jaws</p>
+                    </p>
+
+                <p id = "question3">Which name is a character from the 1988 animated movie "AKIRA"?</p>
+                    <p class = "answers3">
+                        <p>Toshiro</p>
+                        <p>Shigeru</p>
+                        <p>Motoko</p>
+                        <p>Kei</p>
+                    </p>
+
+                <p id = "question4">What psuedonym did the artist Jean Giraud go by?</p>
+                    <p class = "answers4">
+                        <p>Giger</p>
+                        <p>Crumb</p>
+                        <p>Moebius</p>
+                        <p>Frazetta</p>
+                    </p>
+
+                <p id = "question5">Which is the title of a 1968 sci fi movie starring Jane Fonda?</p>
+                    <p class = "answers5">
+                        <p>2001</p>
+                        <p>Planet of the Apes</p>
+                        <p>Alphaville</p>
+                        <p>Barbarella</p>
+                    </p>
+
+                <p id = "question6">Who is the composer of the soundtrack to the Bladerunner sequel?</p>
+                    <p class = "answers6">
+                        <p>John Williams</p>
+                        <p>Howard Shore</p>
+                        <p>Vangelis</p>
+                        <p>Hans Zimmer</p>
+                    </p>
+
+                <p id = "question7">Which college campus was a filming location for one of the Planet of the Apes films?</p>
+                    <p class = "answers7">
+                        <p>UCI</p>
+                        <p>Cal State Long Beach</p>
+                        <p>USC</p>
+                        <p>UCLA</p>
+                    </p>
+
+                <p id = "question8">Which movie marked the end of stop motion animation and brought in the era of CGI?</p>
+                    <p class = "answers8">
+                        <p>Toy Story</p>
+                        <p>Phantom Menace</p>
+                        <p>Jurassic Park</p>
+                        <p>Lord of the Rings</p>
+                    </p>
+
+                <p id = "question9">Which comic book character had a hit TV show from 1978-1982?</p>
+                    <p class = "answers9">
+                        <p>Batman</p>
+                        <p>Spiderman</p>
+                        <p>The Incredible Hulk</p>
+                        <p>Wonder Woman</p>
+                    </p>
+
+                <p id = "question10">Which movie is the first to have an all electronic soundtrack score?</p>
+                    <p class = "answers10">
+                        <p>Tron</p>
+                        <p>The Day the Earth Stood Still</p>
+                        <p>Forbidden Planet</p>
+                        <p>Theif</p>
+                    </p>
+
+                <p id = "question11">What band do the composers of the Stranger Things soundtrack also play in?<br/>
+                                     Hint: The name of the composers are Michael Stein and Kyle Dixon</p>
+                    <p class = "answers11">
+                        <p>Altered States</p>
+                        <p>Survive</p>
+                        <p>Daft Punk</p>
+                        <p>Flying Lotus</p>    
+                    </p>
+
+                <p id = "question12">Which was Steven Spielbergs first full length film?</p>
+                    <p class = "answers12">
+                        <p>Jaws</p>
+                        <p>Cose Encounters</p>
+                        <p>Duel</p>
+                        <p>1941</p>
+                    </p>
+
+                <p id = "question13">Which title is for a 1981 movie based on a popular French comic anthology?</p>
+                    <p class = "answers13">
+                        <p>Fritz the Cat</p>
+                        <p>Superman</p>
+                        <p>Heavy Metal</p>
+                        <p>Creepshow</p>
+                    </p>
+
+                <p id = "question14">What movie script storyboard and concept art went on to influence film productions including<br/>
+                                        the Alien, Star Wars, and Terminator series?</p>
+                    <p class = "answers14">
+                        <p>Lord of the Rings</p>
+                        <p>Star Trek</p>
+                        <p>Dune</p>
+                        <p>Twilight Zone</p>
+                    </p>
+            </div>
+
+            <div id = "scoreBoard">
+                <p>All Done!</p>
+                <p id = "correct">Correct Answers:</p>
+                <p id = "wins"></p>
+                <p id = "incorrect">Incorrect Answers:</p>
+                <p id = "losses"></p>
+                <p id = "null">Unanswered:</p>
+                <p id = "void"></p>
+
+            </div>
+        </h3>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+        <script>
+        
+        $(document).ready(function() {
+                $(".questions").hide();
+                $("#scoreBoard").hide();
+                $("#starter").click(function() {
+                    $("#starter").hide();
+                    $(".questions").show();
+                     });
+                    });
+          
+                
+          </script>
+
+
+
+
+        </body>
+   
+</html>
