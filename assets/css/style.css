@@ -1,10 +1,41 @@
+body {
+    background-color: rgb(243, 171, 233);
+    font-family: 'Voltaire', sans-serif;
+}
+
 
 #gameTitle {
     color: royalblue;
+    background-color: antiquewhite;
     text-align: center;
+    font-size: 120px;
+    margin: 150px;
+    border: 20px;
+    /* font-family: 'Voltaire', sans-serif; */
+  
+    
 }
 
+
 #starter {
-    color: royalblue;
+    color: rgb(117, 184, 204);
     text-align: center;
+    font-size: 200px;
+    background-color: rgb(24, 24, 112);
+    margin: 150px;
+}
+
+.questions {
+    text-align: center;
+    background-color: rgb(147, 205, 231);
+    color: rgb(94, 14, 14);
+    margin: 200px;
+    border: 50px
+
+}
+
+#scoreBoard {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(216, 25, 25);
 }

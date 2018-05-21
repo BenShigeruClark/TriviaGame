@@ -23,9 +23,21 @@
        $("#scoreBoard").show();
        //insert code that will show  All Done! and give scores for answers!
 
+
      }
    }
+     var scoreNumber = 0
 
+   function score() {
+    }
+
+
+   function increment() {
+     number--;
+     var i = 0; i++; return i;
+     $("#wins").html("<h3>" + number + "<h3>");
+     
+   }
 
    function stop() {
      clearInterval(intervalId);
